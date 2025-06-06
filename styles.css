@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: linear-gradient(135deg, #f9f3e6 0%, #f5e6c3 100%);
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 252, 240, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(210, 180, 140, 0.2);
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #8B4513;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.1);
+}
+
+.date-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="date"] {
+    padding: 10px 15px;
+    border: 2px solid #D2B48C;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    background-color: #FFF8E7;
+    color: #8B4513;
+}
+
+input[type="date"]:focus {
+    border-color: #DAA520;
+}
+
+button {
+    padding: 10px 20px;
+    background: #DAA520;
+    color: #FFF8E7;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: #B8860B;
+    transform: translateY(-2px);
+}
+
+.nav-btn {
+    background: #CD853F;
+}
+
+.nav-btn:hover {
+    background: #A0522D;
+}
+
+.calendar-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-card {
+    background: #FFF8E7;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(210, 180, 140, 0.1);
+    transition: transform 0.3s;
+    border: 1px solid #F5DEB3;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(210, 180, 140, 0.2);
+}
+
+.info-card h2 {
+    color: #8B4513;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    border-bottom: 2px solid #F5DEB3;
+    padding-bottom: 8px;
+}
+
+.detail-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail-content p {
+    color: #8B4513;
+    font-size: 1.1em;
+    line-height: 1.6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail-content span {
+    color: #DAA520;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .calendar-info {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .date-picker {
+        flex-wrap: wrap;
+    }
+    
+    button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+} 

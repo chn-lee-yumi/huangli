@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄历查询</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/lunar-javascript@1.6.7/lunar.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>黄历查询</h1>
+            <div class="date-picker">
+                <button id="prevDayBtn" class="nav-btn">前一天</button>
+                <input type="date" id="dateInput">
+                <button id="todayBtn">今日</button>
+                <button id="nextDayBtn" class="nav-btn">后一天</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="calendar-info">
+                <div class="info-card">
+                    <h2>阳历</h2>
+                    <p id="solarDate"></p>
+                    <p>星座：<span id="xingZuo"></span></p>
+                    <p>节日：<span id="solarFestivals"></span></p>
+                    <p>节气：<span id="solarTerm"></span></p>
+                </div>
+                <div class="info-card">
+                    <h2>阴历</h2>
+                    <p id="lunarDate"></p>
+                    <p>节日：<span id="lunarFestivals"></span></p>
+                </div>
+                <div class="info-card">
+                    <h2>佛历</h2>
+                    <p id="fotoDate"></p>
+                    <p>因果犯忌：<span id="fotoFestivals"></span></p>
+                    <p>佛历纪念日：<span id="fotoOtherFestivals"></span></p>
+                </div>
+                <div class="info-card">
+                    <h2>道历</h2>
+                    <p id="taoDate"></p>
+                    <p>道历节日：<span id="taoFestivals"></span></p>
+                </div>
+                <div class="info-card">
+                    <h2>干支</h2>
+                    <p>年：<span id="yearGanZhi"></span></p>
+                    <p>月：<span id="monthGanZhi"></span></p>
+                    <p>日：<span id="dayGanZhi"></span></p>
+                    <p>时：<span id="timeGanZhi"></span></p>
+                </div>
+                <div class="info-card">
+                    <h2>冲煞</h2>
+                    <p>日冲：<span id="dayChong"></span></p>
+                    <p>日煞：<span id="daySha"></span></p>
+                    <p>时冲：<span id="timeChong"></span></p>
+                    <p>时煞：<span id="timeSha"></span></p>
+                </div>
+                <div class="info-card">
+                    <h2>物候</h2>
+                    <p id="wuHou"></p>
+                </div>
+                <div class="info-card">
+                    <h2>禄</h2>
+                    <p id="lu"></p>
+                </div>
+                <div class="info-card">
+                    <h2>今日八字</h2>
+                    <p id="baZi"></p>
+                </div>
+                <div class="info-card">
+                    <h2>彭祖百忌</h2>
+                    <p id="pengZu"></p>
+                </div>
+                <div class="info-card">
+                    <h2>每日宜忌</h2>
+                    <p>宜：<span id="dayYi"></span></p>
+                    <p>忌：<span id="dayJi"></span></p>
+                </div>
+                <div class="info-card">
+                    <h2>吉神凶煞</h2>
+                    <p>吉神宜趋：<span id="dayJiShen"></span></p>
+                    <p>凶煞宜忌：<span id="dayXiongSha"></span></p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
